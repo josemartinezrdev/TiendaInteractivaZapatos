@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bg: #6b240c;
+  --first: #994d1c;
+  --second: #e48f45;
+  --third: #f5cca0;
+  --fourth: #6b240c;
+  --text-one: #ffffff;
+  --text-two: #f5cca0;
+  --text-thr: #000000;
+  --border: #e48f45;
+  --border-section: #6b240c;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--first);
+  padding: 10px 35px;
+}
+
+.nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.04);
+}
+
+.name-shop {
+  text-align: center;
+  font-size: 1.26rem;
+  margin: 0px 25px;
+  color: var(--text-one);
+}
+
+i {
+  color: var(--text-one);
+  font-size: 1.5rem;
+}
+
+i:hover {
+  color: var(--text-two);
+}
+
+i:active {
+  color: var(--bg);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: minmax(300px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+.grid-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+
+  color: var(--text-one);
+  background-color: var(--first);
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-items {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 10px;
+}
+
+.title-item {
+  color: var(--text-two);
+  font-size: 2.5rem;
+}
+
+.price-item {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.btn-item {
+  width: 100%;
+  background-color: var(--fourth);
+  border: 3px solid var(--fourth);
+  color: var(--text-two);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.btn-item:hover {
+  background-color: var(--second);
+  border: 3px solid var(--second);
+  color: var(--fourth);
+}
+
+.btn-item:active {
+  background-color: var(--fourth);
+  border: 3px solid var(--fourth);
+  color: var(--text-two);
+}
+
+.grid-items:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+@media (min-width: 1093px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--first);
+    padding: 10px 35px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .name-shop {
+    font-size: 4rem;
+    color: var(--text-one);
+  }
+}
