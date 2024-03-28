@@ -112,7 +112,8 @@ i:active {
 }
 
 .btn-item {
-  width: 100%;
+  width: 90%;
+  margin: auto 5%;
   background-color: var(--fourth);
   border: 3px solid var(--fourth);
   color: var(--text-two);
@@ -141,24 +142,21 @@ i:active {
 
 .container-icon {
   position: relative;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .cont-products {
   position: absolute;
-  top: 55%;
-  right: 0;
+  top: 62%;
+  margin-left: 15px;
   background-color: #000000;
   color: #ffffff;
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 
 .container-cart-products {
@@ -168,7 +166,7 @@ i:active {
   margin-right: 10px;
   z-index: 1;
   background-color: #ffffff;
-  width: 400px;
+  width: 40vh;
   font-size: 1.3rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -257,5 +255,17 @@ i:active {
 
   i {
     font-size: 3.5rem;
+  }
+
+  .cont-products {
+    top: 55%;
+    right: 0;
+    font-size: 1rem;
+    width: 25px;
+    height: 25px;
+  }
+
+  .container-cart-products {
+    width: 400px;
   }
 }
